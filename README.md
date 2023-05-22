@@ -36,13 +36,13 @@ This project is for developing a weather station with Flask, a python framwork. 
 
 ![home-page](https://github.com/Jyoti-Chakma/Weather-Station-with-Flask/blob/master/Screenshots/home.png)
 
-#### Home Screen
+#### Weather Result 1
 
-![Weather Result 1](https://github.com/Jyoti-Chakma/Weather-Station-with-Flask/blob/master/Screenshots/result1.png)
+![weather1](https://github.com/Jyoti-Chakma/Weather-Station-with-Flask/blob/master/Screenshots/result1.png)
 
-#### Home Screen
+#### Weather Result 2
 
-![Weather Result 2](https://github.com/Jyoti-Chakma/Weather-Station-with-Flask/blob/master/Screenshots/result2.png)
+![weather2](https://github.com/Jyoti-Chakma/Weather-Station-with-Flask/blob/master/Screenshots/result2.png)
 
 ## License
 

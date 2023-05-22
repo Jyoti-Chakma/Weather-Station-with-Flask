@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,41 +62,74 @@
         </div>
 
         <br>
+
         {% if city_name %}
 
         <div class="show-result">
-            <div class="output"><h3 style="color:black; font-size:35px; font-weight:bold; font-family:'Courier New', Courier, monospace; text-transform: uppercase;">{{city_name}}</h3></div>
-            <br>
-            <div class="output"><h3 style="color:green; font-size:22px; font-weight:bold;  font-family:'Courier New', Courier, monospace; ">WEATHER:</h3>{{condition}}</div>
-            {% if condition=='Rain' %}
-            <div class="output-logo">
-            <img src="{{url_for('static', filename='img/rain_light.png')}}">
+
+            <div class="output">
+                <h3 style="color:black; font-size:35px; font-weight:bold; font-family:'Courier New', Courier, monospace; text-transform: uppercase;">{{city_name}}
+                </h3>
             </div>
+
+            <br>
+
+            <div class="output">
+                <h3 style="color:green; font-size:22px; font-weight:bold;  font-family:'Courier New', Courier, monospace; ">WEATHER:
+                </h3>
+                {{condition}}
+            </div>
+
+            {% if condition=='Rain' %}
+
+            <div class="output-logo">
+
+                <img src="{{url_for('static', filename='img/rain_light.png')}}">
+
+            </div>
+
             {% endif %}
             {% if condition=='Clear' %}
+
             <div class="output-logo">
-            <img src="{{url_for('static', filename='img/clear-sky.png')}}">
+
+                <img src="{{url_for('static', filename='img/clear-sky.png')}}">
+
             </div>
+
             {% endif %}
             {% if condition=='Clouds' %}
+
             <div class="output-logo">
-            <img src="{{url_for('static', filename='img/clouds.png')}}">
+                <img src="{{url_for('static', filename='img/clouds.png')}}">
             </div>
+
             {% endif %}
             {% if condition=='Thunderstorm' %}
+
             <div class="output-logo">
-            <img src="{{url_for('static', filename='img/thunder_storm.png')}}">
+                <img src="{{url_for('static', filename='img/thunder_storm.png')}}">
             </div>
+
             {% endif %}
             {% if condition=='Haze' %}
-            <div class="output-logo">
-            <img src="{{url_for('static', filename='img/haze.png')}}">
-            </div>
-            {% endif %}
-            <div class="output-desc">{{desc}}</div>
 
-            <h3 style="margin-bottom: 10px;" >Instant Temperature Information</h3>
+            <div class="output-logo">
+                <img src="{{url_for('static', filename='img/haze.png')}}">
+            </div>
+
+            {% endif %}
+
+            <div class="output-desc">
+                {{desc}}
+            </div>
+
+            <h3 style="margin-bottom: 10px;">
+                Instant Temperature Information
+            </h3>
+
             <table class="table" border="3">
+
                 <tr>
                     <td colspan="2">Temperature</td>
                 </tr>
@@ -107,10 +142,13 @@
                     <td>{{feels_like}} °C</td>
                 </tr>
             </table>
-            
 
-            <h3 style="margin-top: 20px; margin-bottom: 10px;">Todays Temperature Range</h3>
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">
+                Todays Temperature Range
+            </h3>
+
             <table class="table" border="3">
+
                 <tr>
                     <td colspan="2">Min & Max Temperature</td>
                 </tr>
@@ -124,37 +162,55 @@
                 </tr>
             </table>
 
-            <h3 style="margin-top: 20px; margin-bottom: 10px;">Humidity Information</h3>
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">
+                Humidity Information
+            </h3>
+
             <table class="table" border="3">
+
                 <tr>
                     <td class="output"><h3 style="color:green; font-size:22px; font-weight:bold;  font-family:'Courier New', Courier, monospace; ">Humidity</td>
                     <td>{{humidity}} %</td>
                 </tr>
+
             </table>
 
-            <h3 style="margin-top: 20px; margin-bottom: 10px;">Pressure Information</h3>
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">
+                Pressure Information
+            </h3>
+
             <table class="table" border="3">
+
                 <tr>
                     <td class="output"><h3 style="color:green; font-size:22px; font-weight:bold;  font-family:'Courier New', Courier, monospace; ">Pressure</td>
                     <td>{{pressure}} mb</td>
                 </tr>
+
             </table>
 
-            <h3 style="margin-top: 20px;">Wind Information</h3>
+            <h3 style="margin-top: 20px;">
+                Wind Information
+            </h3>
+
             <table class="table" border="3">
+
                 <tr>
                     <td class="output"><h3 style="color:green; font-size:22px; font-weight:bold;  font-family:'Courier New', Courier, monospace; ">Wind Speed</td>
                     <td>{{wind}} Km/h</td>
                 </tr>
+
             </table>
 
         </div>
+
         {% else %}
         
         {% endif %}
 
         <div class="footer">
-            <p>CU Weather Station   |    Chittagong-4331 </p><br>
+
+            <p>CU Weather Station   |    Chittagong-4331 </p>
+            <br>
             <p>2022 @ University of Chittagong </p>
         </div>
 
