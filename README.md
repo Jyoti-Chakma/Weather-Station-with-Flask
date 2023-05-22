@@ -1,6 +1,6 @@
 # Weather Station
 
-This project is for developing a weather station with Flask, a python framwork. It uses Open Weather API to get the weather data.
+This project is for developing a weather station with Flask, a python framework. It uses Open Weather API to get the weather data.
 
 ## Acknowledgements
 
