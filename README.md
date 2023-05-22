@@ -6,6 +6,10 @@ This project is for developing a weather station with Flask, a python framework.
 
 - [Open Weather API](https://openweathermap.org/api)
 
+## Mobile App with Flutter
+
+- [Weather-Station-Flutter]([https://github.com/Jyoti-Chakma/Weather-Station-with-Flask](https://github.com/Jyoti-Chakma/Weather-Station-Flutter)
+
 ## API Reference
 
 #### Get Weather Data
